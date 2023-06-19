@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // console.log(9);
+
+    // setTimeout(function () {
+    //   console.log("abc");
+    // }, 7000); // It takes 7 seconds to show in console
+
+    // console.log('xyz');
+    // // Mantras--->
+    // //1-everything except setTimeout ,setInterval ,apicalls(using promises or using callbacks) will work synchronously in js
+
+    // // 2- JS will execute synchronous code first and then it will execute asynchrnous code post synchronous code has finished executing 
+
+
+    // function foo(cb) {
+
+    //   setTimeout(() => {
+    //     cb("HEloo world")
+    //   }, 5000)
+
+    // }
+
+    // foo(function (data) {
+
+    //   console.log(data);
+
+    // })
+
+    // sync will show first then async
+    let i = 0;
+    setTimeout(() => {
+      i = 99;
+
+      // i = 99 get inside i.e. here only
+    }, 1000)
+    console.log(i); // i = 0 will print
+
+// Mantras--->
+//1-everything except setTimeout ,setInterval ,apicalls(using promises or using callbacks) will work synchronously in js
+
+// 2- JS will execute synchronous code first and then it will execute asynchrnous code post synchronous code has finished executing 
+
+
+  </script>
+</body>
+
+</html>
